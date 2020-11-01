@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+
+            function recebePizza (custoPizza, valorVenda, nomePizza){
+
+                var impostoVenda = (valorVenda*(8.9/100));
+                var lucroLiquido = valorVenda - custoPizza - impostoVenda; 
+                return ("Para a pizza " + nomePizza + " o lucro líquido é de R$" + lucroLiquido + " e o imposto é de " + "R$" + impostoVenda);
+            }
+
+            document.write (recebePizza (20, 35, "Resilia"));
+
+//1. Receber o custo da pizza produzida
+//2. Receber o valor pelo qual a pizza � vendida
+//3. Receber o nome da pizza que est� sendo vendida
+//4. Calcular o imposto (8,9%) do valor da pizza vendida
+//5. Calcular o lucro l�quido obtido pela Pizzaria Resilia
+//6. Exibir na tela a mensagem: Para a pizza {nome da pizza} o lucro l�quido � de R${valor do
+//lucro} e o imposto � de {valor do imposto}
+
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <script>
+        var body = document.querySelector("body");
+        body.style.width = "500px";
+        body.style.height = "500px";
+        body.style.display = "flex";
+        body.style.alignItems = "center";
+        body.style.justifyContent = "center";
+
+        var botao = document.createElement("button");
+        botao.innerHTML = "Click";
+        botao.style.backgroundColor = "lightblue";
+        botao.style.fontSize = "20px"
+        body.appendChild(botao);
+
+        botao.addEventListener ("click", function(){
+            botao.innerHTML = "(Click)";
+        })
+
+        botao.addEventListener ("mouseout", function(){
+            botao.innerHTML = "Click";
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

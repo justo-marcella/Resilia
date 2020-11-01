@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<meta charset="UTF-8">
+	</head>
+	<body>
+		<script>
+			function calcularInflacaoDia(precoAntes, precoDepois, nomeProduto, numeroDias){
+				//diferen�a de pre�o
+				//dividir pelo numero de dias
+				var diferencaPreco = precoDepois - precoAntes;
+				var InflacaoDia = diferencaPreco/numeroDias;
+				var InflacaoArredondada = Math.round (InflacaoDia*100)/100;
+
+				return ("O " + nomeProduto + " teve a inflação de " + InflacaoArredondada + " reais por dia")
+			}
+			
+				var textoTomate = calcularInflacaoDia (3.30, 4.70, "tomate", 6);
+				document.write (textoTomate + "<br>");
+
+				var textoArroz = calcularInflacaoDia (2.99, 3.25, "arroz", 6);
+				document.write (textoArroz + "<br>");
+
+				var textoCenoura = calcularInflacaoDia (3.99, 4.14, "cenoura", 6);
+				document.write (textoCenoura + "<br><br>");
+
+			function calcularInflacaoMedia (media1, media2, media3) {
+				var mediaInflacao = ((textoTomate + textoArroz + textoCenoura)/3);
+
+				return ("A média da inflação dos produtos é R$" + mediaInflacao)
+
+			}
+
+				var mediaProdutos = calcularInflacaoMedia (textoTomate, textoArroz, textoCenoura);
+				document.write (mediaProdutos + "<br>")
+			
+		</script>
+	</body>
+</html>

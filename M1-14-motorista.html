@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorista</title>
+</head>
+<body>
+    <script>
+        
+        
+        function permissaoDirigir(idadeUsuario, idadePermitida){
+
+            
+            if (idadeUsuario >= idadePermitida){
+                
+                return "Você pode dirigir!"
+            }
+            
+            else if (idadeUsuario < idadePermitida) {
+                
+                return "Você não pode dirigir."
+            }
+            
+        }
+
+        var idadePermitida = 18
+
+        document.write (permissaoDirigir (17, idadePermitida))
+        
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<meta charset="UTF=8">
+<script>
+
+	function distribuirLaranjas (numeroLaranjas, numeroVizinhos) {
+		//guardar o resto das laranjas numa variavel
+		//divisao para os vizinhos
+		//retornar quantidade de laranjas para cada vizinho e quantas ficaram pra mim
+
+		var resto = numeroLaranjas%numeroVizinhos;
+
+		var vizinhos = (numeroLaranjas - resto)/numeroVizinhos;
+	
+		//var vizinhos = Math.round(numeroLaranjas/numeroVizinhos);
+	
+		return ("Joselito ficou com " + resto + " laranjas e seus vizinhos ficaram com " + vizinhos + "<br>")
+	}
+
+	document.write (distribuirLaranjas (30, 8));
+
+</script>
