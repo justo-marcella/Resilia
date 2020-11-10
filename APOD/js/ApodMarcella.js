@@ -9,7 +9,7 @@ let dataDaFoto = document.getElementById("diaApod")
 
 let pedido = new XMLHttpRequest()
 
-// botao para foto de hoje da APOD 
+// default
 pedido.open('GET', `https://api.nasa.gov/planetary/apod?api_key=RfjZmve2z0UAECDozMvRgsBvzXi44gcao1tPA4Uj`, false)
 pedido.addEventListener("load", function () {
     event.preventDefault()
@@ -28,7 +28,7 @@ pedido.send()
 
 let selecaoData = new XMLHttpRequest()
 
-// botao para data especifica
+// botao para form
 botao.addEventListener("click", function () {
 event.preventDefault()
 let inputData = document.getElementById("diaApod").value
