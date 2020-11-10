@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="reset/css" href="./css/reset.css" >
+    <link rel="stylesheet" href="./css/ApodMarcella.css">
+    <script src="./js/ApodMarcella.js" defer ></script>
+    <title>Foto Astronômica do Dia</title>
+
+</head>
+<body>
+    <header>
+        <h1>Foto Astronômica do Dia</h1>
+        <h2>Aprecie o Cosmos!</h2> 
+        <h3>Todo dia uma foto fascinante do nosso Universo, seguida de uma explanação de astrônomos.</h3>
+    </header>
+
+    <div id="containerPicData">
+        <div id="formData">
+            <form>
+                <div>
+                <input type="date" id="diaApod" name="diaa">
+                <button type="submit">Seleciona</button>
+                </div>
+            </form>
+        </div>
+        <figure>
+            <div id="imagemDoDia">
+                <img src="" id="imagemDia" alt="Picture of day">
+                <figcaption id="legendaPicDia"></figcaption>
+            </div>
+        </figure>
+        
+        <div id="dataDaImagem">
+            <p class="dataImagem"></p>
+        </div>
+
+    </div>
+
+    <div id="explanationPic">
+        <p id="explicacaoPic">
+        
+        </p>
+    </div>
+    <footer>
+        <p>copyright</p>
+    </footer>
+
+    
+</body>
+</html>
