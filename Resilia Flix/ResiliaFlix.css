@@ -1,0 +1,140 @@
+body{
+    background-color: black;
+    height: auto;
+}
+header{
+    background-color: black;
+    opacity: 90;
+    width: 100%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fbfb32;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    width: 94%;
+}
+
+.navegacaocabecalho{
+    display: flex;
+    justify-content: space-around;
+    /* width: 40%; */
+}
+
+a.menuprincipal{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #00001a;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid;
+    border-radius: 5px;
+    background-color: #fbfb32;
+    padding: 5px;
+}
+a:hover{
+    color: yellowgreen;
+}
+
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+  }
+
+.tituloGrid{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}  
+
+#filmes {
+      display: flex;
+      justify-content: space-around;
+  }
+#series{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#img{
+      width: 250px;
+      height: 375px;
+      border-radius: 1.5px;
+      text-shadow: white 0px 0px 2px;
+}
+
+#img:hover{
+       opacity:1;
+        background:rgba(12, 30, 31, 0.7);
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.2);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.2);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.2);
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* align-content: end; */
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+#rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.copyrightContainer{
+    color: azure;
+    padding: 3px;
+    text-align: center;
+
+}
+
+
+.navegacao{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    /* width: 10px;
+    height: 10px; */
+}
+.media-object {
+    width:25px;
+    height: 25px;
+}
+/* a.iconsrodape{
+    text-decoration: none;
+    background-color: none;
+    width:10px;
+    height: 10px; */
+
