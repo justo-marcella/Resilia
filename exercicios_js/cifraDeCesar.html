@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = "Alex"
+
+        function cifrandoComAsBrabas (deslocamento, nomes){
+            
+            let numeros = [];
+            let arrayNomes = []; //recebe uma mensagem
+
+            for (let i = 0; i < nomes.length ; i++){
+                numeros.push (nomes.charCodeAt (i) + deslocamento)
+            }
+            
+            for (let i = 0; i< numeros.length; i++){
+                arrayNomes.push (String.fromCharCode(numeros[i]))
+            }
+            
+            return arrayNomes.join("")
+
+        }
+
+
+        function descifrandoComAsBrabas (deslocamento, nomes){
+
+            let names = [];
+            let arrNames = [];
+
+            for (let i = 0; i< nomes.length; i++){
+                names.push (nomes.charCodeAt(i) - deslocamento)
+
+            }
+            for (let i = 0; names.length; i++){
+                arrNames.push (String.fromCharCode(names[i]));
+            }
+            return arrNames.join("")
+        }
+        
+        console.log (cifrandoComAsBrabas(2, nome))
+        console.log (descifrandoComAsBrabas(2, "Cngz"))
+
+
+    </script>
+    
+</body>
+</html>
