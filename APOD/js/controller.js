@@ -1,6 +1,6 @@
 class Controller{
 
-    recebeEMostra(data){
+    static recebeEMostra(data){
         let chamaModa = new Model()
         chamaModa.recebeObjeto(data)
 
